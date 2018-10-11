@@ -6,4 +6,6 @@ typings/
 jsconfig.json
 /node_modules
 /build
+/dist
+*.log
 package-lock.json
