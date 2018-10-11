@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDom from 'react-dom';
 import './index.css';
 
 function calculateWinner(squares) {
@@ -91,7 +90,7 @@ class Board extends React.Component {
   }
 }
 
-class Game extends React.Component {
+export default class Game extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -198,7 +197,3 @@ class Game extends React.Component {
     );
   }
 }
-
-ReactDom.render(
-  <Game/>
-  , document.getElementById('app'));

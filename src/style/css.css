@@ -1,0 +1,17 @@
+.article-column{
+  border: 1px solid #CCC;
+  height: 300px;
+  margin-bottom: 30px;
+  padding: 15px;
+  display: block;
+  color: #333;
+}
+
+.article-column:hover{
+  text-decoration: none;
+  color: #666;
+}
+
+.article-column-title{
+  height: 130px;
+}

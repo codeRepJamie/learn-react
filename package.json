@@ -5,38 +5,39 @@
   "author": "jamietsang <zengjm@innapp.cn>",
   "license": "MIT",
   "scripts": {
-    "build": "webpack",
-    "watch": "webpack --watch",
-    "dev": "webpack --config webpack.config.babel.js && webpack-dev-server"
-  },
-  "babel": {
-    "presets": [
-      "env",
-      "react",
-      "stage-2"
-    ]
+    "clean": "rm -rf ./dist",
+    "build": "npm run clean && webpack",
+    "watch": "npm run clean && webpack --watch",
+    "dev": "webpack --config webpack.config.js && webpack-dev-server"
   },
   "dependencies": {
-    "babel-core": "^6.26.3",
+    "@babel/core": "^7.1.2",
     "babel-generator": "^6.26.1",
+    "bootstrap": "3.3.7",
     "create-react-class": "^15.6.3",
+    "history": "^4.7.2",
+    "query-string": "^6.2.0",
     "react": "^16.4.2",
-    "react-dom": "^16.4.2"
+    "react-bootstrap": "^0.32.4",
+    "react-dom": "^16.4.2",
+    "react-router-bootstrap": "^0.24.4",
+    "react-router-dom": "^4.3.1"
   },
   "devDependencies": {
+    "@babel/plugin-syntax-dynamic-import": "^7.0.0",
+    "@babel/preset-env": "^7.1.0",
+    "@babel/preset-react": "^7.0.0",
     "autoprefixer": "^9.1.0",
-    "babel-cli": "^6.26.0",
-    "babel-loader": "^7.1.5",
-    "babel-preset-env": "^1.7.0",
-    "babel-preset-react": "^6.24.1",
-    "babel-preset-stage-2": "^6.24.1",
+    "babel-loader": "^8.0.4",
     "css-loader": "^1.0.0",
     "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "file-loader": "^2.0.0",
     "html-webpack-plugin": "^3.2.0",
     "mini-css-extract-plugin": "^0.4.1",
     "node-sass": "^4.9.3",
     "postcss-loader": "^3.0.0",
     "precss": "^3.1.2",
+    "react-loadable": "^5.5.0",
     "sass-loader": "^7.1.0",
     "style-loader": "^0.22.1",
     "webpack": "^4.16.5",

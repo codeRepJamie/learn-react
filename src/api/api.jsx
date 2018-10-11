@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDom from 'react-dom';
 
-class MyTest extends React.Component {
+export default class MyTest extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -20,7 +20,7 @@ class MyTest extends React.Component {
 
   componentDidMount() {
     console.log('componentDidMount');
-    setState()
+    //this.setState()
   }
 
   componentDidUpdate(prevProps, prevState, snapshot) {
@@ -75,6 +75,3 @@ class Body extends React.Component {
     )
   }
 }
-
-
-ReactDom.render(<Body/>, document.getElementById('app2'));
